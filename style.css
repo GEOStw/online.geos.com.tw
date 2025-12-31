@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Noto Sans TC", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background image */
+body {
+    background: url("./images/bg.jpg") center / cover
+      no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Dark overlay + grayscale */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: grayscale(100%);
+}
+
+/* Language switch */
+.lang-switch {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    z-index: 2;
+    font-size: 0.95rem;
+}
+
+.lang-switch button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lang-switch span {
+    margin: 0 6px;
+    opacity: 0.6;
+}
+
+/* Content container */
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 640px;
+    padding: 32px;
+}
+
+/* Logo */
+.logo {
+    width: 220px;
+    margin-bottom: 24px;
+}
+
+/* Headline */
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Message text */
+p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    margin-bottom: 32px;
+}
+
+/* CTA button — GEOS green */
+.cta {
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00b3a4, #16e0c2);
+    box-shadow: 0 12px 30px rgba(0, 179, 164, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0, 179, 164, 0.6);
+}
