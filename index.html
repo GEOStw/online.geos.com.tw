@@ -46,9 +46,9 @@
         title: "We’re Working on It",
         message:
           "We’re performing maintenance to improve system stability and functionality.",
-        cta: "Cancel a Class"
         message_for_button:
           "To cancel a class, click the button below.",
+        cta: "Cancel a Class"
       },
       zh: {
         title: "系統維護中",
@@ -63,7 +63,7 @@
     function setLang(lang) {
       document.getElementById("title").textContent = content[lang].title;
       document.getElementById("message").textContent = content[lang].message;
-      document.getElementById("message").textContent = content[lang].message_for_button;
+      document.getElementById("message_for_button").textContent = content[lang].message_for_button;
       document.getElementById("cta").textContent = content[lang].cta;
 
       // optional: active state on buttons

@@ -3,9 +3,9 @@ const text = {
     title: "We’re improving our system",
     message:
      "Our system is currently under maintenance while we improve stability and fix ongoing issues.",
-    cta: "Cancel a Class",
     message_for_button:
       "To cancel a class, click the button below.",
+    cta: "Cancel a Class",
     note: "Thank you for your patience and understanding."
   },
   zh: {
@@ -22,7 +22,7 @@ const text = {
 function setLang(lang) {
   document.getElementById("title").innerText = text[lang].title;
   document.getElementById("message").innerText = text[lang].message;
-  document.getElementById("message").textContent = content[lang].message_for_button;
+  document.getElementById("message_for_button").textContent = content[lang].message_for_button;
   document.getElementById("cta").innerText = text[lang].cta;
   document.getElementById("note").innerText = text[lang].note;
 }
