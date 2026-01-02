@@ -28,7 +28,7 @@
     <p id="message">
       目前系統正在維護與優化中，以提升穩定性並修復相關問題。
     </p>
-    <p>如需請假，請點選下方按鈕</p>
+    <p id="message_for_button">如需請假，請點選下方按鈕</p>
 
     <a
       href="https://notification-app-jade.vercel.app/"
@@ -47,11 +47,15 @@
         message:
           "We’re performing maintenance to improve system stability and functionality.",
         cta: "Cancel a Class"
+        message_for_button:
+          "To cancel a class, click the button below.",
       },
       zh: {
         title: "系統維護中",
         message:
           "目前系統正在維護與優化中，以提升穩定性並修復相關問題。",
+        message_for_button:
+          "如需請假，請點選下方按鈕",
         cta: "課程請假"
       }
     };
@@ -59,6 +63,7 @@
     function setLang(lang) {
       document.getElementById("title").textContent = content[lang].title;
       document.getElementById("message").textContent = content[lang].message;
+      document.getElementById("message").textContent = content[lang].message_for_button;
       document.getElementById("cta").textContent = content[lang].cta;
 
       // optional: active state on buttons
